@@ -1,0 +1,9 @@
+<%= form_for(@song) do |f| %>
+<%= label_tag 'name' %>
+<%= f.text_area :name %>
+<%= label_tag 'artist_id' %>
+<%= f.number_field :artist_id %>
+<%= label_tag 'genre_id' %>
+<%= f.number_field :genre_id %>
+<%= f.submit %>
+<% end %>
