@@ -1,0 +1,13 @@
+<h1><%=@artist.name%></h1>
+
+<h3>Bio: <%=@artist.bio%></h3>
+
+<h2>Songs: </h2>
+<% @songs.each do |song|%>
+<li><a href="<%= song_path(song) %>"><%= song.name %></a></li>
+<% end %>
+
+<h2>Genres: </h2>
+<% @genres.each do |genre|%>
+<li><a href="<%= genre_path(genre) %>"><%= genre.name %></a></li>
+<% end %>
